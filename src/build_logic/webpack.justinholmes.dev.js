@@ -18,6 +18,9 @@ async function dev_config() {
                 writeToDisk: true,
             },
             port: 4000,
+            // TODO: Replace 'all' with specific allowed hosts for better security
+            // Currently allows access via justin0.hunter.cryptograss.live and other proxied domains
+            allowedHosts: 'all',
             historyApiFallback: {
                 rewrites: [
                     { from: /\/$/, to: '/index.html' },
