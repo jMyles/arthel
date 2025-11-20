@@ -70,6 +70,11 @@ export default {
                     noErrorOnMissing: true
                 },
                 {
+                    from: path.resolve(outputPrimarySiteDir, 'api'),
+                    to: path.resolve(outputDistDir, 'api'),
+                    noErrorOnMissing: true
+                },
+                {
                     from: path.resolve(srcDir, '../audio'),
                     to: path.resolve(outputDistDir, 'audio'),
                     noErrorOnMissing: true
@@ -89,7 +94,7 @@ export default {
         shapes: `${frontendJSDir}/shapes.js`,
         blue_railroad: `${frontendJSDir}/bazaar/blue_railroad.js`,
         oracle_client: `${frontendJSDir}/oracle_client.js`,
-        chartifact_player: `${frontendJSDir}/chartifacts_player.js`,
+        rabbithole_player: `${frontendJSDir}/rabbithole_player.js`,
     },
     module: {
         rules: [
